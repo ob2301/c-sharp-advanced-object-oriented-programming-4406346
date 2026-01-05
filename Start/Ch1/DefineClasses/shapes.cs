@@ -2,15 +2,24 @@
 // Defining and instantiating classes
 
 // TODO: Define a class using the "class" keyword
+class Rectangle{
+    public int width, height;
+    public Rectangle(int width, int height)
+    {
+         this.width = width;
+         this.height = height;
+    }
 
-    // TODO: The constructor accepts parameters used to create the object
+    public Rectangle(int length)
+    {
+        this.width = length;
+        this.height = length;
+    }
+
+    public int Area()
+    {
+        return this.width * this.height;
+    }
 
 
-    // TODO: For convenience, we can have a constructor that takes one value
-    // for squares that have the same side size
-
-
-    // TODO: Classes can define methods that return values
-
-
-    // TODO: member variables hold data
+}
