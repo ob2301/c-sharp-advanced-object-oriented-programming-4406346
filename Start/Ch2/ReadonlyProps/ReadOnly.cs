@@ -3,18 +3,19 @@
 
 public class Book {
     // Declare some private fields
-    private string _ISBN = "";
+    private readonly string _ISBN = "";
     private string _title = "";
     private string _author = "";
 
     public Book(string ISBN, string Title, string Author) {
         _ISBN = ISBN;
+        //difference between readonly and const: readonly can be assigned in constructor
         _title = Title;
         _author = Author;
     }
 
     public void Update(string ISBN, string Title, string Author) {
-        _ISBN = ISBN;
+        //_ISBN = ISBN;
         _title = Title;
         _author = Author;
     }

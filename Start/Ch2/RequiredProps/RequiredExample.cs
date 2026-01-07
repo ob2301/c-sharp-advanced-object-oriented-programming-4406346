@@ -16,7 +16,7 @@ public class Employee {
 
     // TODO: The "required" keyword means that a value must be assigned during construction
     // Members that are required must be at least as visible as the containing type
-    public int ID {
+    public required int ID {
         get; 
         init;
     }
@@ -26,7 +26,7 @@ public class Employee {
     public string? FirstName {
         get; set;
     }
-    public string LastName {
+    public required string LastName {
         get; set;
     }
 

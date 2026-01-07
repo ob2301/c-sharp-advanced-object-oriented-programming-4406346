@@ -16,7 +16,7 @@ public class Employee {
     // The init keyword means that a value is assigned only during construction
     public int ID {
         get => _id;
-        set => _id = value;
+        init => _id = value; //so it can only be set once during initialization
     }
     public string? Department {
         get; set;
